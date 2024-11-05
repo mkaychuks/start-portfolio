@@ -1,0 +1,91 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.services .services-cards ul {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-primary {
+  background-color: #74c69d !important;
+}
+
+.text-green {
+  color: #74c69d;
+}
+
+.space {
+  letter-spacing: 3;
+}
+
+.btn {
+  padding: 13px 47px;
+}
+
+.py-20 {
+  padding-inline: 20px;
+}
+
+.px-38 {
+  padding-block: 38px;
+}
+
+/* show and hide the menu items when */
+.bg-primary.mobile-menu-items {
+  height: 0;
+  opacity: 0;
+  background-color: transparent;
+  transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.bg-primary.mobile-menu-items.show {
+  height: 180px;
+  opacity: 1;
+}
+
+/* grid */
+.portfolio-cards {
+  display: grid;
+  row-gap: 55px;
+  column-gap: 55px;
+  justify-content: center;
+}
+
+
+.services .services-cards .pricing-list-item {
+  list-style: inside;
+}
+
+
+.services .services-cards {
+  border-radius: 8px;
+  border: 0.5px solid rgba(230, 222, 222, 0.75);
+  padding: 46px 30px;
+  box-shadow: 7px 10px 5px 0px rgba(230, 222, 222, 0.75);
+  -webkit-box-shadow: 7px 10px 5px 0px rgba(230, 222, 222, 0.75);
+  -moz-box-shadow: 7px 10px 5px 0px rgba(230, 222, 222, 0.75);
+}
+
+@media (min-width: 768px) {
+  .portfolio-cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .form-fields {
+    width: 450px;
+  }
+}
